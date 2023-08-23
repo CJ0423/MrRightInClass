@@ -1,0 +1,65 @@
+$white: white;
+$seaBlue: #148de9;
+$gray-border: #ccc;
+$meeting: #9944ef;
+$birthday: rgb(210, 22, 22);
+$holiday: #ddaf09;
+
+.calender {
+  width: 100%;
+  max-width: 600px;
+  // background-color: #9944ef;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &-header {
+    width: 100%;
+    padding: 10px;
+    color: $white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: $seaBlue;
+  }
+  &-day {
+    width: calc(calc(100% / 7) - 2px);
+    height: 100px;
+    border: 1px solid $gray-border;
+    // box-sizing: border-box;
+    position: relative;
+    span {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .event {
+      display: block;
+
+      // background-color: aqua;
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+      }
+      &-meeting::before {
+        background-color: $meeting;
+      }
+      &-birthday::before {
+        background-color: $birthday;
+      }
+      &-holiday::before {
+        background-color: $holiday;
+      }
+    }
+  }
+}

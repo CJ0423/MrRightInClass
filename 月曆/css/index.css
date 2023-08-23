@@ -1,0 +1,53 @@
+.calender {
+  width: 100%;
+  max-width: 600px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calender-header {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #148de9;
+}
+.calender-day {
+  width: calc(14.2857142857% - 2px);
+  height: 100px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.calender-day span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.calender-day .event {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.calender-day .event::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.calender-day .event-meeting::before {
+  background-color: #9944ef;
+}
+.calender-day .event-birthday::before {
+  background-color: rgb(210, 22, 22);
+}
+.calender-day .event-holiday::before {
+  background-color: #ddaf09;
+}/*# sourceMappingURL=index.css.map */
