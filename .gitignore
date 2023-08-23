@@ -1,0 +1,24 @@
+# macOS Finder 暫存檔案
+.DS_Store
+
+# macOS 桌面服務存放資料夾
+.AppleDouble
+.LSOverride
+
+# macOS 檔案縮圖快取
+._*
+
+# macOS 資源派發檔案
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# macOS 資料夾尺寸計算檔案
+.VolumeIcon.icns
+
+# macOS 網路共享檔案
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
