@@ -1,0 +1,28 @@
+.bmi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 600px;
+
+
+    &-header{
+        align-items: center;
+    }
+
+    &-content{
+        align-items: center;
+    }
+
+    &-send button{
+        align-items: center;
+        margin-top: 10px;
+    }
+    &-send p{
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+}

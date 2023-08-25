@@ -4,8 +4,20 @@ function BMI(weight,height){
     return bmi ;
 }   
 
-let weight = 53
-let height = 163
+var calculateBtn = document.querySelector("#result");
+var resultElement = document.querySelector("#resultt");
 
-let BB = BMI(weight,height)
-console.log(BB)
+calculateBtn.addEventListener("click", function () {
+  var weightInput = document.querySelector("#weight");
+  var heightInput = document.querySelector("#height");
+
+  var weight = parseFloat(weightInput.value);
+  var height = parseFloat(heightInput.value);
+
+  if (!isNaN(weight) && !isNaN(height)) {
+    var bmi = BMI(weight, height);
+    resultElement.textContent = "您的BMI是：" + bmi;
+  } else {
+    resultElement.textContent = "請輸入有效的數值。";
+  }
+});

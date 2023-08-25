@@ -1,1 +1,22 @@
-/*# sourceMappingURL=index.css.map */
+.bmi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 600px;
+}
+.bmi-header {
+  align-items: center;
+}
+.bmi-content {
+  align-items: center;
+}
+.bmi-send button {
+  align-items: center;
+  margin-top: 10px;
+}
+.bmi-send p {
+  align-items: center;
+  margin-top: 10px;
+}/*# sourceMappingURL=index.css.map */
